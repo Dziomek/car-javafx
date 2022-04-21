@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainPane" prefHeight="517.0" prefWidth="608.0" style="-fx-background-color: #fff8dc;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.car.AddCarPageController">
+   <children>
+      <Label layoutX="14.0" layoutY="85.0" text="Registration number">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutY="14.0" prefHeight="32.0" prefWidth="600.0" text="Add a new car">
+         <font>
+            <Font name="Cambria Bold Italic" size="26.0" />
+         </font>
+      </Label>
+      <TextField fx:id="registration2TextField" layoutX="226.0" layoutY="87.0" prefHeight="26.0" prefWidth="270.0" />
+      <Label layoutX="14.0" layoutY="116.0" text="Model">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="model2TextField" layoutX="226.0" layoutY="118.0" prefHeight="26.0" prefWidth="270.0" />
+      <Label alignment="CENTER" layoutY="53.0" prefHeight="32.0" prefWidth="600.0" text="Car">
+         <font>
+            <Font name="Cambria Bold Italic" size="17.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="5.0" layoutY="146.0" prefHeight="32.0" prefWidth="600.0" text="Engine">
+         <font>
+            <Font name="Cambria Bold Italic" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="178.0" text="Type">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="209.0" text="Capacity">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="capacity2TextField" layoutX="226.0" layoutY="211.0" prefHeight="26.0" prefWidth="270.0" />
+      <Label alignment="CENTER" layoutX="8.0" layoutY="251.0" prefHeight="32.0" prefWidth="600.0" text="Gearbox">
+         <font>
+            <Font name="Cambria Bold Italic" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="17.0" layoutY="283.0" text="Number of gears">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="280.0" layoutY="463.0" mnemonicParsing="false" onAction="#add" prefHeight="26.0" prefWidth="57.0" style="-fx-background-color: #98fb98;" text="Add">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label fx:id="missingTextField" alignment="CENTER" layoutX="355.0" layoutY="326.0" prefHeight="32.0" prefWidth="238.0" textFill="RED">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="fiveCheckBox" layoutX="212.0" layoutY="290.0" mnemonicParsing="false" text="5" />
+      <RadioButton fx:id="sevenCheckBox" layoutX="319.0" layoutY="290.0" mnemonicParsing="false" text="7" />
+      <RadioButton fx:id="sixCheckBox" layoutX="265.0" layoutY="290.0" mnemonicParsing="false" text="6" />
+      <RadioButton fx:id="eightCheckBox" layoutX="373.0" layoutY="290.0" mnemonicParsing="false" text="8" />
+      <RadioButton fx:id="dieselCheckBox" layoutX="310.0" layoutY="184.0" mnemonicParsing="false" text="Diesel" />
+      <RadioButton fx:id="petrolCheckBox" layoutX="226.0" layoutY="184.0" mnemonicParsing="false" text="Petrol" />
+      <Label layoutX="17.0" layoutY="358.0" text="Icon:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="audiImageView" fitHeight="71.0" fitWidth="106.0" layoutX="90.0" layoutY="347.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../images/audiRS.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="bmwImageView" fitHeight="72.0" fitWidth="106.0" layoutX="212.0" layoutY="344.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../images/bmw.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="mercedesImageView" fitHeight="60.0" fitWidth="121.0" layoutX="348.0" layoutY="349.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../images/amg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="passatImageView" fitHeight="51.0" fitWidth="117.0" layoutX="465.0" layoutY="353.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../images/passat.png" />
+         </image>
+      </ImageView>
+      <RadioButton fx:id="audiRadioButton" layoutX="135.0" layoutY="415.0" mnemonicParsing="false" />
+      <RadioButton fx:id="bmwRadioButton" layoutX="271.0" layoutY="415.0" mnemonicParsing="false" />
+      <RadioButton fx:id="merolRadioButton" layoutX="393.0" layoutY="415.0" mnemonicParsing="false" />
+      <RadioButton fx:id="passatRadioButton" layoutX="523.0" layoutY="415.0" mnemonicParsing="false" />
+   </children>
+</AnchorPane>
